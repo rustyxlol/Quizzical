@@ -1,0 +1,48 @@
+.options input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e400;
+
+  /* Text properties */
+  font-family: "Inter";
+  font-weight: 500;
+  text-align: center;
+  color: #293264;
+
+  /* Box properties */
+  height: 100%;
+  padding: 8px 16px;
+  border: 1px solid #4d5b9e;
+  cursor: pointer;
+}
+
+.options label:hover {
+  cursor: pointer;
+}
+
+.options input:checked + label {
+  background: #d6dbf5;
+  font-weight: 600;
+}
+
+/* .options > label:first-of-type {
+  border-radius: 40px 0 0 40px;
+}
+
+.options > label:last-of-type {
+  border-radius: 0 40px 40px 0;
+} */
+
+.choices-container {
+  height: 100%;
+}

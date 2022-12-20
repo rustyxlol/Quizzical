@@ -1,0 +1,56 @@
+.Quiz {
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 1.5rem;
+  max-width: 750px;
+}
+
+.question {
+  align-self: flex-start;
+  font-weight: 700;
+  color: #293264;
+}
+
+.options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  align-items: center;
+  gap: 20px;
+
+  font-size: 1rem;
+  padding: 20px 0px 30px 0px;
+  margin-bottom: 30px;
+}
+
+.check-btn,
+.restart-btn {
+  color: white;
+  padding: 15px 40px 15px 40px;
+  background: #394374;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.qna-container {
+  /* display: flex; */
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #2932643d;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.result-text {
+  color: #293264;
+  font-size: 2rem;
+}
